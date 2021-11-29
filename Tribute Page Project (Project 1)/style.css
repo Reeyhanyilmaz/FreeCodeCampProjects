@@ -1,92 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'News Cycle', sans-serif;
-    font-size: 13px;
-
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "News Cycle", sans-serif;
+  font-size: 13px;
 }
 
-body{
-    background-image: url("assets/background-pictures.png");
-    background: linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255));
-    
+body {
+  background-image: url("assets/background-pictures.png");
+  background: linear-gradient(35deg, #ccffff, #ffcccc, rgb(204, 204, 255));
 }
 
 .sol {
-width: 900px;
-margin: auto;
+  width: 900px;
+  margin: auto;
 }
 
-#top-image{
-float: right;
-padding: 15px 30px 0 10px;
-height: 290px;
-width: 500px;
-border-radius: 8px;
-box-shadow: 10px 10px 5px -2px #ebdaeb ;
+#top-image {
+  float: right;
+  padding: 15px 30px 0 10px;
+  height: 290px;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px -2px #ebdaeb;
 }
 
-
-#tribute-info{
-    padding: 10px;
-    line-height: 25px;
-    text-align: justify;
+#tribute-info {
+  padding: 10px;
+  line-height: 25px;
+  text-align: justify;
 }
 
 figcaption::first-letter {
-    font-size: 400%;
-    color: black;
-    float: left;
-	line-height: 1em;
-	margin: 0.13em 0.13em 0.13em 0;
-  }
+  font-size: 400%;
+  color: black;
+  float: left;
+  line-height: 1em;
+  margin: 0.13em 0.13em 0.13em 0;
+}
 
 #img-div {
-    padding: 10px;
-    margin: 0;
-    width: 100%;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
 }
 
 #image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    margin: 0 auto;
-    border-radius: 8px ;
-    box-shadow: 10px 10px 5px -2px #ebdaeb ;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px -2px #ebdaeb;
 }
 
-.carousel-foto{
-    height: 500px;
-    width: 800px;
+.carousel-foto {
+  height: 500px;
+  width: 800px;
 }
 
 .container {
-    width: 1000px;
-    background-color: #f8f2f2;
-    box-shadow: 5px 5px 5px #d2d2d2;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    border-radius: 20px; 
-    padding-bottom: 5px; 
-    padding-top: 10px;
+  width: 1000px;
+  background-color: #f8f2f2;
+  box-shadow: 5px 5px 5px #d2d2d2;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 
-.imza{
-    background-color: #ffffff;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-   width: 100%;
+.imza {
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .footer {
-    text-align: center;
-    padding: 30px;
-    border-top: solid 1px #000;
-  }
-
-
-
-
+  text-align: center;
+  padding: 30px;
+  border-top: solid 1px #000;
+}
