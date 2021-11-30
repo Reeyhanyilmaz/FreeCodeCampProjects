@@ -7,18 +7,128 @@
     <title>Survey Form (Project 2)</title>
 
     <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="assets/short-cut-icon.png"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/short-cut-icon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
+
 <body>
     <header >
         <h1 id="title"> Anket Formu </h1>
-
     </header>
-    <main>
-    <p id="description"> </p>
-    <form action="" id="survey-form" > </form>
 
+    <main>
+    <p id="description"> Lütfen Kodluyoruz.org'u nasıl geliştireceğimizi bize bildiriniz. </p>
+    <hr>
+    <form id="survey-form" >
+
+        <div class="row">
+          <label for="name" id="name-label">İsminiz*</label>
+          <input type="text" id="name" placeholder="İsminizi giriniz" required>
+        </div>
+    
+        <div class="row">
+            <label for="email" id="email-label">Mail adresiniz*</label>
+            <input type="email" id="email" placeholder="Mail adresinizi giriniz" required>
+          </div>
+
+          <div class="row">
+            <label for="number" id="number-label">Yaşınız*</label>
+            <input type="number" id="number"  min="15" max="80" placeholder="Yaşınızı giriniz">
+          </div>
+
+          <div class="row">
+            <label for="dropdown" id="number-label">Hangi seçenek sizi en iyi şekilde tanımlar?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="" disabled>Seçiniz</option>
+                <option value="student">Öğrenci</option>
+                <option value="full-time">Full-time çalışan</option>
+                <option value="part-time">Part-time çalışan</option>
+                <option value="unemployed">Çalışmıyor</option>
+                <option value="other">Diğer...</option>
+            </select>
+          </div>
+
+          <div class="row">
+              <legend>Kodluyoruz'u arkadaşınıza önerme olasılığınız nedir?</legend>
+              <div class="radios">
+                 <div class="radio-group">
+                    <label for="kesinlikle" class="radio-label">Kesinlikle Öneririm</label>
+                    <input type="radio" name="recommend" id="kesinlikle" class="radio-input">
+                 </div>
+
+                 <div class="radio-group">
+                    <label for="emin-degilim" class="radio-label">Emin değilim</label>
+                    <input type="radio" name="recommend" id="emin-degilim" class="radio-input">
+                  </div>
+
+                  <div class="radio-group">
+                    <label for="önermem" class="radio-label">Önermem</label>
+                    <input type="radio" name="recommend" id="önermem" class="radio-input">
+                  </div>
+
+             </div> <!-- radios bitiş -->
+          </div> <!-- row bitiş -->
+        
+
+          <div class="row">
+              <legend>İyileştirmemizi istediğiniz uygun olan tüm seçenekleri işaretleyiniz. </legend>
+              <div class="checkboxes">
+               <div class="checkbox-group">
+                <label for="front-end" class="checkbox-label"> Front-End </label>
+                <input type="checkbox" name="checkbox" id="front-end" value="front-end" class="input-checkbox">
+               </div>
+
+               <div class="checkbox-group">
+                <label for="back-end" class="checkbox-label"> Back-End </label>
+                <input type="checkbox" name="checkbox" id="back-end" value="back-end" class="input-checkbox">
+               </div>
+
+               <div class="checkbox-group">
+                <label for="veribilimi" class="checkbox-label"> Veri Bilimi </label>
+                <input type="checkbox" name="checkbox" id="veribilimi" value="veribilimi" class="input-checkbox">
+               </div>
+
+               <div class="checkbox-group">
+                <label for="mobileapp" class="checkbox-label"> Mobile App </label>
+                <input type="checkbox" name="checkbox" id="mobileapp" value="mobileapp" class="input-checkbox">
+               </div>
+
+               <div class="checkbox-group">
+                <label for="python" class="checkbox-label"> Python </label>
+                <input type="checkbox" name="checkbox" id="python" value="python" class="input-checkbox">
+               </div>
+
+              </div> <!-- checkboxes end  -->
+         </div> <!-- row end  -->
+
+         <div class="row">
+             <label for="textarea"><legend> Yorum ve Önerileriniz için: </legend></label>
+             <textarea type="text" name="textarea" id="textarea" rows="5" rows="10"></textarea>
+         </div>
+         
+         <div class="button">
+          <button type="submit" id="submit"> Gönder </button>
+         </div>  
+         
+
+    </form>
 </main>
+
+    <footer id="footer">
+        <p class="copyright">Written and coded by
+            <a href="https://github.com/Reeyhanyilmaz" target="_blank" 
+            style="text-decoration: none; 
+            color: rgb(245, 109, 56); 
+            font-size: 20px; 
+            margin-top: 5px; "> 
+            Reyhan Yılmaz</a> 
+            Copyright &copy; 2021
+        </p>
+         
+    </footer>
 </body>
 </html>
