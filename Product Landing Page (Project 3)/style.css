@@ -147,6 +147,7 @@ h3 {
 
     ul {
         display: block;
+        font-size:15px;
     }
 
     #Hakkımızda {
@@ -155,5 +156,10 @@ h3 {
 
     .video {
         max-width: 150px;
+    }
+
+    #header-img {
+      width: 200px;
+      margin-top: 10px;
     }
 }
